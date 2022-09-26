@@ -1,56 +1,20 @@
 # embroider-issue-349
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Demo for issue https://github.com/embroider-build/embroider/issues/349.
 
-## Prerequisites
+To see the problem, run:
 
-You will need the following things properly installed on your computer.
+```
+EMBROIDER_CONCAT_STATS=true ember build
+```
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://cli.emberjs.com/release/)
-* [Google Chrome](https://google.com/chrome/)
+With `ember-table` installed you'll see the following issue:
 
-## Installation
+```
+Building into /private/var/folders/d8/h8767lqn0jb3h53qj9v70_l80000gn/T/embroider/1ed8e7
+Environment: development
+cleaning up...
+Build Error (WaitForTrees)
 
-* `git clone <repository-url>` this repository
-* `cd embroider-issue-349`
-* `npm install`
-
-## Running / Development
-
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint`
-* `npm run lint:fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://cli.emberjs.com/release/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+ENOENT: no such file or directory, stat '/private/var/folders/d8/h8767lqn0jb3h53qj9v70_l80000gn/T/embroider/1ed8e7/PATH_TO_PROEJCT/embroider-issue-349/node_modules/css-element-queries/src/ResizeSensor.js'
+```
